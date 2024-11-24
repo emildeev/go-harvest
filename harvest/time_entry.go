@@ -161,11 +161,11 @@ type TimeEntryCreateViaStartEndTime struct {
 
 type TimeEntryUpdate struct {
 	// required	The ID of the project to associate with the time entry.
-	ProjectID *int64 `json:"project_id"`
+	ProjectID *int64 `json:"project_id,omitempty"`
 	// required	The ID of the task to associate with the time entry.
-	TaskID *int64 `json:"task_id"`
+	TaskID *int64 `json:"task_id,omitempty"`
 	// required	The ISO 8601 formatted date the time entry was spent.
-	SpentDate *Date `json:"spent_date"`
+	SpentDate *Date `json:"spent_date,omitempty"`
 	// optional	The time the entry started. Defaults to the current time. Example: “8:00am”.
 	StartedTime *Time `json:"started_time,omitempty"`
 	// optional	The time the entry ended. If provided, is_running will be set to false.
