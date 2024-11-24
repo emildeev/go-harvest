@@ -1,4 +1,4 @@
-module github.com/becoded/go-harvest
+module github.com/emildeev/go-harvest
 
 go 1.22.0
 
